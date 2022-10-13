@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/9efad6ee9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact me</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Hello World</p>
+          <h1>I am <span>Aleksi</span></h1>
+         </div>
+      </div>
+    </div>
+    <div class="down-arrow"></div>
+  </body>
+  <!---------about-->
+  <main>
+    <div id="about">
+      <div class="container">
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu volutpat est. Sed interdum justo nec aliquet convallis. Proin a elit justo. Praesent eu mauris quam. Vivamus sit amet finibus erat. In hac habitasse platea dictumst. Nulla facilisi. Pellentesque ac nisl mauris. Praesent efficitur magna vel tr
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experiance')">
+                Experiance/Projects</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  Js,Java,Python,C++,C,PHP
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experiance">
+              <ul>
+                <li>
+                  <span>Portfolio website </span><br />Used only Html ,CSS and Bootstrap.
+                </li>
+                <li>
+                  <span>Project 2</span><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                  <span>Project 3</span><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>University of Manchester</span><br />Disanaged to understand your explanation,
+                  your videos are of incredible quality
+                </li>
+                <li>
+                  <span>niversity of Leeds</span><br />Disanaged to understand your explanation,
+                  your videos are of incredible quality
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------- cont----------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fas fa-paper-plane"></i> Contact email@example.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>123456789</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Massage"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </main>
+</html>
